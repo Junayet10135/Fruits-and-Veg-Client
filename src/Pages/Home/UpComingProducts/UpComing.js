@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import UpComingProduct from './UpComingProduct';
 
 const UpComing = () => {
+    const [UpComings, setUpComings] = useState([]);
+
+    useEffect(()=>{
+        fetch('upComing.json')
+        .then(res=>res.json())
+        .then(data=> setUpComings(data))
+    },[])
     return (
-        <div>
-            <h2>About to Come hhh</h2>
+        <div className='container'>
+            <h2>About to Coming:{UpComings.length}</h2>
+            <div className='row mx-auto text-center'>
+                {
+                    UpComings.map(upComing=> <UpComingProduct
+                    key={upComing.id}
+                    upComing = {upComing}
+                    ></UpComingProduct>)
+                }
+            </div>
         </div>
     );
 };
