@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "name": "APPLES",
+        "price": "13-15 / BOX",
+	    "quantity": "1100 BOXES",
+	    "Supplier": "KIBRIA KHAN",
+        "description": "Indoneasia Market Selected Quality Fresh Red Paper Bagged FUJI Apple,price will 12-15 usd per BOX.",
+        "img": "https://i.ibb.co/zsqMY8s/Apples.jpg"
+    },
+    {
+        "id": 2,
+        "name": "AVOCADO",
+        "price": "10-12 / BOX",
+	    "quantity": "1000 BOXES",
+	    "Supplier": "ARIA KHAN",
+        "description": "Export New Season New Crop Fresh Fruit Avocado,price will 10-12 usd per BOX, 1000 Boxes in Stock.",
+        "img": "https://i.ibb.co/1vTkb9G/avocado.jpg"
+    },
+    {
+        "id": 3,
+        "name": "BLUE BERRIES",
+        "price": "2800 / TON",
+	    "quantity": "15 TONS",
+	    "Supplier": "ISMAIL YUSUF",
+        "description": "Grade a Wild Culticated 100% Natrual Organic Bulk IQF BLueberry ,price will be 2800 usd per TON.",
+        "img": "https://i.ibb.co/dW0VfCS/Blueberries.jpg"
+    },
+    {
+        "id": 4,
+        "name": "BROCCOLI",
+        "price": "650-800 / TON",
+	    "quantity": "10 TONS",
+	    "Supplier": "THANOS",
+        "description": "Frozen Vegetable Agricultural Industry Hot Sale Brc Green Broccoli,Price 650-800 usd per TON ",
+        "img": "https://i.ibb.co/Mc8WY6F/Broccoli.jpg"
+    },
+    {
+        "id": 5,
+        "name": "PEAS",
+        "price": "5.5 -7 /KG",
+	    "quantity": "20 KG",
+	    "Supplier": "SUMON RAHMAN",
+        "description": "Fresh New Season New Crop Fresh Vegtable Peas,which price will be 5.5-7 usd per KG , 20 KG in Stock.",
+        "img": "https://i.ibb.co/wBzdWQw/Peas.jpg"
+    },
+    {
+        "id": 6,
+        "name": "POTATO",
+        "price": "200-300 / TON",
+	    "quantity": "30 TONS",
+	    "Supplier": "KAUSAR MOLLA",
+        "description": "High Quality New Season New Crop Fresh Vegtable Potato,which price will be 200-300 usd per TON.",
+        "img": "https://i.ibb.co/zhHFHVP/Potato.jpg"
+    },
+    {
+        "id": 7,
+        "name": "CLEMENTINE",
+        "price": "5-10 / KG",
+	    "quantity": "100 KG",
+	    "Supplier": "UCHSASH KHAN",
+        "description": "Export New Season New Crop Fresh Fruit Clementine,which price will 5-10 usd per TON.",
+        "img": "https://i.ibb.co/3sgB6Ps/Clementire.jpg"
+    },
+    {
+        "id": 8,
+        "name": "DATES",
+        "price": "2-3 / KG",
+	    "quantity": "1000 KG",
+	    "Supplier": "NOMAN KHANNA",
+        "description": "Healthy Fruuit Sncks Manufacturere Low Calories New Dates, which price will be 2-3 usd per KG .",
+        "img": "https://i.ibb.co/y06jDZn/Dates.jpg"
+    },
+    {
+        "id": 9,
+        "name": "DRAGON FRUIT",
+        "price": "15-25 / KG",
+	    "quantity": "50 KG",
+	    "Supplier": "SABBIR AHMED",
+        "description": "High Quality Freeze-Dried Fresh Dragon Fruit,which price will be 15-25 usd per KG,50 KG in Stock .",
+        "img": "hhttps://i.ibb.co/hZ4v9mR/Dragon-Fruit.jpg"
+    },
+    {
+        "id": 10,
+        "name": "BEETS",
+        "price": "5-10 /KG",
+	    "quantity": "100 KG",
+	    "Supplier": "MUSTAFIZ",
+        "description": "Fresh New Season New Crop Fresh Vegtable Beets,which price will be 5-10 usd per KG , 100 KG in Stock.",
+        "img": "https://i.ibb.co/hmGqySr/Beets.jpg"
+    },
+    {
+        "id": 11,
+        "name": "CARROT",
+        "price": "100-200 /TON",
+	    "quantity": "10 TONS",
+	    "Supplier": "PARVEZ",
+        "description": "High Quality New Season New Crop Fresh Vegtable Carrots,which price will be 100-200 usd per TON.",
+        "img": "https://i.ibb.co/ch3fZxp/Carrots.jpg"
+    },
+    {
+        "id": 12,
+        "name": "ONIONS",
+        "price": "200-400 /TON",
+	    "quantity": "20 TONS",
+	    "Supplier": "ARMAN",
+        "description": "Export New Season New Crop Fresh Vegtable Red Oninons,which price will be 200-400 usd per TON",
+        "img": "https://i.ibb.co/tCxxSKs/Onions.jpg"
+    }
+]
