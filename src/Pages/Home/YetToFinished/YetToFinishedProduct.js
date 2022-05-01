@@ -1,7 +1,7 @@
 import React from 'react';
 
-const UpComingProduct = ({ upComing }) => {
-    const { name, img, price, quantity, Supplier, description } = upComing;
+const YetToFinishedProduct = ({ lessProduct }) => {
+    const { name, img, price, quantity, Supplier, description } = lessProduct;
     return (
         <div className='inventory-container mb-5 g-5 col-sm-12 col-md-6 col-lg-4 rounded'>
             <img src={img} className="card-img-top" alt="..." />
@@ -11,10 +11,10 @@ const UpComingProduct = ({ upComing }) => {
                 <p className="card-text"><strong>Quantity:</strong> {quantity}</p>
                 <p className="card-text"><strong>Supplier Name:</strong> {Supplier}</p>
                 <p><small>{description}</small></p>
-                
+
             </div>
         </div>
     );
 };
 
-export default UpComingProduct;
+export default YetToFinishedProduct;
