@@ -11,7 +11,7 @@ const AllProduct = ({ inventory }) => {
                 <p className="card-text"><strong>Quantity:</strong> {quantity}</p>
                 <p className="card-text"><strong>Supplier Name:</strong> {Supplier}</p>
                 <p><small>{description}</small></p>
-                <button className='button d-block mx-auto'> Update</button>
+                <button className='button d-block mx-auto'> Delete</button>
             </div>
         </div>
     );
