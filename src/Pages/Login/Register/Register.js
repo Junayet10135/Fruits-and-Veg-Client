@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
+import SocialLogIn from '../SocialLogin/SocialLogIn';
 import './Register.css'
 
 const Register = () => {
@@ -88,7 +89,7 @@ const Register = () => {
                 <p>Already Have an account? <Link to='/login' className='text-danger pe-auto text-decoration-none ' onClick={navigateLogin}>Please LogIn</Link></p>
             </div>
             {errorElement}
-            
+            <SocialLogIn></SocialLogIn>
             <ToastContainer />
         </div>
     );
