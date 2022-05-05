@@ -1,5 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import './App.css';
+import AddProduct from './Pages/AddProduct/AddProduct';
 import Home from './Pages/Home/Home/Home';
 import Inventory from './Pages/Inventory/Inventory';
 import Login from './Pages/Login/Login/Login';
@@ -26,9 +28,11 @@ function App() {
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/update' element={<UpateProductList></UpateProductList>}></Route>
+        <Route path='/addProduct' element={<AddProduct></AddProduct>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
+      <ToastContainer />
     </div>
   );
 }

@@ -1,18 +1,12 @@
-import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Inventory from '../../Inventory/Inventory';
+import useInventory from '../../../hooks/useInventory';
 import Product from '../Product/Product';
 import './Products.css'
 
 const Products = () => {
-    const [inventorys, setInventorys] = useState([]);
+    const [inventorys] = useInventory();
     const navigate = useNavigate();
 
-    useEffect(()=>{
-        fetch('http://localhost:5000/inventory')
-        .then(res=>res.json())
-        .then(data => setInventorys(data))
-    },[]);
 
     const handleAllProduct=()=>{
         navigate('/inventory');

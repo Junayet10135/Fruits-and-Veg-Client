@@ -13,10 +13,6 @@ const Header = () => {
         signOut(auth);
 
     }
-    const test = () => {
-        console.log(user);
-
-    }
     return (
         <div className='navBar sticky-top'>
             <Navbar collapseOnSelect expand="lg" bg="" variant="light">
@@ -41,10 +37,10 @@ const Header = () => {
                                         
                                         <NavDropdown title={user.displayName} id="collasible-nav-dropdown">
                                             <NavDropdown.Item onClick={handleSignOut} to='/'>SIGN OUT</NavDropdown.Item>
-                                            <NavDropdown.Item onClick={test} href="#action/3.2">test</NavDropdown.Item>
-                                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                                            <NavDropdown.Item as={Link} to='/inventory'>MANAGE ITEM</NavDropdown.Item>
+                                            <NavDropdown.Item as={Link} to='/addProduct'>ADD PRODUCT</NavDropdown.Item>
                                             <NavDropdown.Divider />
-                                            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                                            <NavDropdown.Item to='/myItem'>MY ITEMS</NavDropdown.Item>
                                         </NavDropdown>
                                         
                                     </div>
