@@ -1,0 +1,14 @@
+.section-title {
+    background-color: rgb(205, 238, 138);
+    border-radius: 10px;
+}
+.all-inven-btn {
+    background-color: rgb(227, 247, 116);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.all-inven-btn:hover{
+    background-color: rgb(215, 238, 62);
+}

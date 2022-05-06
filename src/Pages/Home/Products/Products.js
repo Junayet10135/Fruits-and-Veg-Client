@@ -13,7 +13,7 @@ const Products = () => {
     }
     return (
         <div className='container'>
-            <h2 className='text-center'>Here products section :{inventorys.length}</h2>
+            <h2 className='text-center section-title p-2 my-2'>My Inventory</h2>
             <div className='row mx-auto text-center'>
                 {
                     inventorys.slice(0,6).map(inventory => <Product
@@ -22,7 +22,7 @@ const Products = () => {
                     ></Product>)
                 }
             </div>
-            <button onClick={handleAllProduct} className='btn btn-primary w-75  d-block mx-auto my-2'>Manage All Products</button>
+            <button onClick={handleAllProduct} className=' w-75  d-block mx-auto all-inven-btn my-2'>Manage All Products</button>
         </div>
     );
 };

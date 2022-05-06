@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 const ProductDetails = () => {
     const { inventoryId } = useParams();
     const [product, setProduct] = useState({});
-    const [isReload, setReload] = useState(false);
+    const [isReload, setIsReload] = useState(false);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -13,23 +13,26 @@ const ProductDetails = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data));
-    }, [inventoryId]);
+    }, [isReload, inventoryId]);
+    
     const handleAllProduct = () => {
         navigate('/inventory');
     }
-
+    
     const handleUpdate = event=>{
+        
         // event.preventDefault()
         const quantity = event.target.Quantity.value;
         const newQuantity = parseInt(quantity) + parseInt(product?.quantity)
-        console.log(newQuantity);
-
+       // console.log(newQuantity);
         const updateProduct = {newQuantity}
 
         if(!quantity){
             toast('no value')
+            
         }
         else{
+            
             const url = `http://localhost:5000/inventory/${inventoryId}`
             fetch(url,{
                 method : 'PUT',
@@ -38,14 +41,13 @@ const ProductDetails = () => {
                 },
                 body : JSON.stringify(updateProduct)
             })
-
             .then(res => res.json())
-            .then(data =>{
-                console.log(data);
-                setReload(!isReload);
-                event.target.reset();
+            .then(result =>{
+                
+                setIsReload(!isReload)
+                
             })
-
+            
         }
 
         
@@ -65,15 +67,15 @@ const ProductDetails = () => {
 
             .then(res => res.json())
             .then(data => {
-                console.log(data);
-                setReload(!isReload);
                 
+                setIsReload(!isReload) 
+                             
             })
 
-        window.location.reload();
+         window.location.reload();
     }
     return (
-        <div className='row container '>
+        <div className='row container  mx-auto'>
             <div className='inventory-container mb-5 g-5 col-sm-12 col-md-6 col-lg-4 rounded'>
                 <img src={product.img} className="card-img-top" alt="..." />
                 <div className="card-body text-start">
@@ -88,10 +90,10 @@ const ProductDetails = () => {
                 </div>
                 <form onSubmit={handleUpdate}>
                     <input type="text" name='Quantity' />
-                    <input type="submit" value="update" />
+                    <input className='button' type="submit" value="update" />
                 </form>
             </div>
-            <button onClick={handleAllProduct} className='btn btn-primary'>Manage All Products</button>
+            <button onClick={handleAllProduct} className=' w-75  d-block mx-auto my-2 all-inven-btn'>Manage All Products</button>
         </div>
     );
 };

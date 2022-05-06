@@ -10,7 +10,7 @@ const MostSales = () => {
     }, [])
     return (
         <div className='container'>
-            <h2 className='text-center'>Product Which Will Be Finished Soon:{lessProducts.length}</h2>
+            <h2 className='text-center section-title p-2 '>Product Which Will Be Finished Soon</h2>
             <div className='row mx-auto text-center'>
                 {
                     lessProducts.map(lessProduct => <YetToFinishedProduct

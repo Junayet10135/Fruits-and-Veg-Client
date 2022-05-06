@@ -21,7 +21,7 @@ const Product = ({ inventory }) => {
                 <p><small>{description}</small></p>
                 
             </div>
-            <button onClick={() => handleInventoryId(_id)} className='button d-block mx-auto'> Update</button>
+            <button onClick={() => handleInventoryId(_id)} className='button w-25 d-block mx-auto'> Update</button>
         </div>
     );
 };

@@ -11,7 +11,7 @@ const UpComing = () => {
     },[])
     return (
         <div className='container'>
-            <h2 className='text-center bg-secondary p-2'>Product Should Add By Tomorrow:{UpComings.length}</h2>
+            <h2 className='text-center  p-2 section-title'>Product Should Add By Tomorrow</h2>
             <div className='row mx-auto text-center'>
                 {
                     UpComings.map(upComing=> <UpComingProduct

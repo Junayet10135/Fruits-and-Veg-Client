@@ -1,11 +1,29 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import useInventory from '../../hooks/useInventory';
 import AllProduct from './AllProduct';
 
 const Inventory = () => {
-    const [inventorys] = useInventory();
+    const [inventorys, setInventorys] = useInventory();
     const navigate = useNavigate();
+
+    const handleDelete = id => {
+        const proceed = window.confirm('are you sure?');
+        if (proceed) {
+            const url = `http://localhost:5000/inventory/${id}`;
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    toast('delete successfully!')
+                    const remaining = inventorys.filter(inventory => inventory._id !== id);
+                    setInventorys(remaining);
+                })
+
+        }
+    }
 
 
     const handleUpdate = ()=>{
@@ -20,6 +38,7 @@ const Inventory = () => {
                     inventorys.map(inventory => <AllProduct
                         key={inventory._id}
                         inventory={inventory}
+                        handleDelete={handleDelete}
                     ></AllProduct>)
                 }
             </div>
