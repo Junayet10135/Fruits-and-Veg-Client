@@ -27,7 +27,7 @@ const ProductDetails = () => {
         const updateProduct = {newQuantity}
 
         if(!quantity){
-            toast('value dee')
+            toast('no value')
         }
         else{
             const url = `http://localhost:5000/inventory/${inventoryId}`

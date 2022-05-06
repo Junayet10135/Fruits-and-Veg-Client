@@ -22,7 +22,7 @@ const AddService = () => {
                 console.log(result);
             })
             toast('Product added')
-            data.target = '';
+            
 
     };
     return (
