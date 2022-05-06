@@ -70,7 +70,6 @@ const ProductDetails = () => {
                 
             })
 
-       // console.log('hii');
 
     }
     return (

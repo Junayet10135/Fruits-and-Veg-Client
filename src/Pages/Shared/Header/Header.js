@@ -36,11 +36,13 @@ const Header = () => {
                                         <NavLink className={({ isActive }) => (isActive ? "active-link" : "link")} to='/'>MY ITEMS</NavLink> */}
                                         
                                         <NavDropdown title={user.displayName} id="collasible-nav-dropdown">
-                                            <NavDropdown.Item onClick={handleSignOut} to='/'>SIGN OUT</NavDropdown.Item>
+                                            <NavDropdown.Item onClick={handleSignOut} to='/'>LOG OUT</NavDropdown.Item>
+                                            <NavDropdown.Divider />
                                             <NavDropdown.Item as={Link} to='/inventory'>MANAGE ITEM</NavDropdown.Item>
+                                            <NavDropdown.Divider />
                                             <NavDropdown.Item as={Link} to='/addProduct'>ADD PRODUCT</NavDropdown.Item>
                                             <NavDropdown.Divider />
-                                            <NavDropdown.Item to='/myItem'>MY ITEMS</NavDropdown.Item>
+                                            <NavDropdown.Item as={Link} to='/myItem'>MY ITEMS</NavDropdown.Item>
                                         </NavDropdown>
                                         
                                     </div>
