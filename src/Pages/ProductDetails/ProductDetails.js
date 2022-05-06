@@ -70,7 +70,7 @@ const ProductDetails = () => {
                 
             })
 
-
+        window.location.reload();
     }
     return (
         <div className='row container '>

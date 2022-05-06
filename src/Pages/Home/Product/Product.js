@@ -11,7 +11,7 @@ const Product = ({ inventory }) => {
 
     }
     return (
-        <div className='inventory-container mb-5 g-5 col-sm-12 col-md-6 col-lg-4 rounded'>
+        <div className='inventory-container mb-5 g-5 col-sm-12 col-md-6 col-lg-4 rounded '>
             <img src={img} className="card-img-top" alt="..." />
             <div className="card-body text-start">
                 <h5 className="card-title">{name}</h5>
@@ -19,8 +19,9 @@ const Product = ({ inventory }) => {
                 <p className="card-text"><strong>Quantity:</strong> {quantity}</p>
                 <p className="card-text"><strong>Supplier Name:</strong> {Supplier}</p>
                 <p><small>{description}</small></p>
-                <button onClick={() => handleInventoryId(_id)} className='button d-block mx-auto'> Update ?{name}</button>
+                
             </div>
+            <button onClick={() => handleInventoryId(_id)} className='button d-block mx-auto'> Update</button>
         </div>
     );
 };

@@ -38,7 +38,10 @@ const AllProduct = ({ inventory }) => {
                 <p className="card-text"><strong>Quantity:</strong> {quantity}</p>
                 <p className="card-text"><strong>Supplier Name:</strong> {Supplier}</p>
                 <p><small>{description}</small></p>
-                <button onClick={() => handleInventoryId(inventory._id)} className='button d-block mx-auto'> Update ?{name}</button>
+                
+            </div>
+            <div className='d-flex'>
+                <button onClick={() => handleInventoryId(inventory._id)} className='button d-block mx-auto'> Update</button>
                 <button onClick={() => handleDelete(inventory._id)} className='button d-block mx-auto'> Delete</button>
             </div>
         </div>

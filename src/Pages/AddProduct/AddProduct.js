@@ -29,13 +29,13 @@ const AddService = () => {
         <div className='w-50 mx-auto'>
             <h2>Add Product</h2>
             <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
+                <input className='mb-2' placeholder='email ( use current logged in email )' type="email"  {...register("email")} />
                 <input className='mb-2' placeholder='Product name'  {...register("name", { required: true, maxLength: 20 })} />
-                <input className='mb-2' placeholder='email' type="email"  {...register("email")} />
-                <input className='mb-2' placeholder='Supplier' {...register("Supplier", { required: true, maxLength: 20 })} />
-                <textarea className='mb-2' placeholder='description' {...register("description")} />
                 <input className='mb-2' placeholder='price' type="text" {...register("price")} />
                 <input className='mb-2' placeholder='quantity' type="number" {...register("quantity")} />
+                <input className='mb-2' placeholder='Supplier' {...register("Supplier", { required: true, maxLength: 20 })} />
                 <input className='mb-2' placeholder='photo URL' type="text" {...register("img")} />
+                <textarea className='mb-2' placeholder='description' {...register("description")} />
                 <input type="submit" value='add product' />
             </form>
             

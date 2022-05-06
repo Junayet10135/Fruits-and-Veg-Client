@@ -5,13 +5,13 @@ const UpComing = () => {
     const [UpComings, setUpComings] = useState([]);
 
     useEffect(()=>{
-        fetch('upComing.json')
+        fetch('http://localhost:5000/upcoming')
         .then(res=>res.json())
         .then(data=> setUpComings(data))
     },[])
     return (
         <div className='container'>
-            <h2 className='text-center'>About to Coming:{UpComings.length}</h2>
+            <h2 className='text-center bg-secondary p-2'>Product Should Add By Tomorrow:{UpComings.length}</h2>
             <div className='row mx-auto text-center'>
                 {
                     UpComings.map(upComing=> <UpComingProduct
