@@ -37,9 +37,11 @@ const MyItems = () => {
             <h2 className='my-4'>Your Added Product You Can <span className='text-danger'>Delete</span> It From here</h2>
             <h5>Your Name: {user?.displayName}</h5>
             <h5>Your Email: {user?.email}</h5>
+
+            <p>If You Don't see any data , wait few second it will show soon or please reload again and check again your product added in all inventories or not</p>
             
             
-            <div>
+            <div className='row container'>
                 {
                     remaining.map(item => <MyItem
                     key={item._id}
