@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 const ProductDetails = () => {
     const { inventoryId } = useParams();
     const [product, setProduct] = useState({});
-    const [isReload, setIsReload] = useState(false);
+    const [isReload, setIsReload] = useState(true);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -21,11 +21,13 @@ const ProductDetails = () => {
     
     const handleUpdate = event=>{
         
-        // event.preventDefault()
+         event.preventDefault()
         const quantity = event.target.Quantity.value;
         const newQuantity = parseInt(quantity) + parseInt(product?.quantity)
        // console.log(newQuantity);
         const updateProduct = {newQuantity}
+
+        setProduct({ ...product, quantity: product.quantity = product.quantity + parseInt(quantity) });
 
         if(!quantity){
             toast('no value')
@@ -44,18 +46,19 @@ const ProductDetails = () => {
             .then(res => res.json())
             .then(result =>{
                 
-                setIsReload(!isReload)
+                setIsReload(false)
                 
             })
             
         }
-
+            event.target.reset();
         
     }
     const delivery = event => {
         const quantity = product?.quantity;
         const updateProduct = {quantity};
 
+        setProduct({ ...product, quantity: product.quantity = product.quantity - 1 });
         const url = `https://cryptic-escarpment-05910.herokuapp.com/delivery/${inventoryId}`
         fetch(url, {
             method: 'PUT',
@@ -68,11 +71,11 @@ const ProductDetails = () => {
             .then(res => res.json())
             .then(data => {
                 
-                setIsReload(!isReload) 
+                setIsReload(false) 
                              
             })
 
-         window.location.reload();
+        // window.location.reload();
     }
     return (
         <div className='row container  mx-auto'>
