@@ -9,7 +9,7 @@ const ProductDetails = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        const url = `http://localhost:5000/inventory/${inventoryId}`
+        const url = `https://cryptic-escarpment-05910.herokuapp.com/inventory/${inventoryId}`
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data));
@@ -33,7 +33,7 @@ const ProductDetails = () => {
         }
         else{
             
-            const url = `http://localhost:5000/inventory/${inventoryId}`
+            const url = `https://cryptic-escarpment-05910.herokuapp.com/inventory/${inventoryId}`
             fetch(url,{
                 method : 'PUT',
                 headers : {
@@ -56,7 +56,7 @@ const ProductDetails = () => {
         const quantity = product?.quantity;
         const updateProduct = {quantity};
 
-        const url = `http://localhost:5000/delivery/${inventoryId}`
+        const url = `https://cryptic-escarpment-05910.herokuapp.com/delivery/${inventoryId}`
         fetch(url, {
             method: 'PUT',
             headers: {

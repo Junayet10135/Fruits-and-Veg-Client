@@ -5,7 +5,7 @@ const UpComing = () => {
     const [UpComings, setUpComings] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:5000/upcoming')
+        fetch('https://cryptic-escarpment-05910.herokuapp.com/upcoming')
         .then(res=>res.json())
         .then(data=> setUpComings(data))
     },[])
@@ -15,7 +15,7 @@ const UpComing = () => {
             <div className='row mx-auto text-center'>
                 {
                     UpComings.map(upComing=> <UpComingProduct
-                    key={upComing.id}
+                    key={upComing._id}
                     upComing = {upComing}
                     ></UpComingProduct>)
                 }

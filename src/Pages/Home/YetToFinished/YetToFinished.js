@@ -4,7 +4,7 @@ import YetToFinishedProduct from './YetToFinishedProduct';
 const MostSales = () => {
     const [lessProducts, setLessProducts]=useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/finishing')
+        fetch('https://cryptic-escarpment-05910.herokuapp.com/finishing')
             .then(res => res.json())
             .then(data => setLessProducts(data))
     }, [])
@@ -14,7 +14,7 @@ const MostSales = () => {
             <div className='row mx-auto text-center'>
                 {
                     lessProducts.map(lessProduct => <YetToFinishedProduct
-                        key={lessProduct.id}
+                        key={lessProduct._id}
                         lessProduct={lessProduct}
                     ></YetToFinishedProduct>)
                 }

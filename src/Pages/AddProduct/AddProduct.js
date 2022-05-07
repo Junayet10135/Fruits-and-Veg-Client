@@ -9,7 +9,7 @@ const AddService = () => {
     const [user] = useAuthState(auth);
     const onSubmit = data => {
        // console.log(data);
-        const url = `http://localhost:5000/inventory`;
+        const url = `https://cryptic-escarpment-05910.herokuapp.com/inventory`;
         fetch(url, {
             method: 'POST',
             headers: {
@@ -30,7 +30,7 @@ const AddService = () => {
             <h2>Add Product</h2>
             <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
                 <input className='mb-2' placeholder='email ( use current logged in email )' type="email"  {...register("email")} value={user?.email} />
-                <input className='mb-2' placeholder='Product name'  {...register("name", { required: true, maxLength: 20 })} />
+                <input className='mb-2' placeholder='Product name' autoComplete='off' {...register("name", { required: true, maxLength: 20 })} />
                 <input className='mb-2' placeholder='price' type="text" {...register("price")} />
                 <input className='mb-2' placeholder='quantity' type="number" {...register("quantity")} />
                 <input className='mb-2' placeholder='Supplier' {...register("Supplier", { required: true, maxLength: 20 })} />
