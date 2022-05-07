@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# Welcome to `Fruits And Veg`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Live Site `Link`
 
-## Available Scripts
+[https://fruits-and-veg-mania.web.app/](https://fruits-and-veg-mania.web.app/).
 
-In the project directory, you can run:
+## Stack OverFlow Question `Link`
 
-### `npm start`
+[https://stackoverflow.com/questions/72151347/what-is-the-best-alternative-of-jwt-json-web-token-and-how-can-we-work-effici](https://stackoverflow.com/questions/72151347/what-is-the-best-alternative-of-jwt-json-web-token-and-how-can-we-work-effici/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## About Something About My Site
+ #### “*” This is Website for fruits and vegetable warehouse website.
+ #### “*” For go any route / use properly you need to create a account in register page.
+  #### “*” Without log in you won't be able to go add product page / my item page and etc.
+ #### “*” After one Time you create a account next time you just need to login don't need to create account every time.
+ #### “*” if you were loged in then in navbar you see a dropdown menu bar instead of login button, then you click in your profile name button which is dropdown menu you can able to see other menus .
+ #### “*” There are 4 menu and many options like update you can't see or do something without login .
+ #### “*” this site based on own database and server site.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ ## Libraries and  frameworks that i use in this project 
+ #### “*” `React-router` 
+ #### “*” `React-Router-hooks` 
+ #### “*” `Bootstrap` 
+ #### “*” `Firebase-Authentication` for authentication
+ #### “*” `Toastify`
+ #### “*” `heroku` for server
