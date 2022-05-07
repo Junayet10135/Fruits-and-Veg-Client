@@ -65,7 +65,7 @@ const Login = () => {
     };
     return (
         <div className='container mx-auto w-50 mt-5 form-container'>
-            <h2 className='text-center'>Please Login</h2>
+            <h2 className='text-center section-title mb-4 p-2'>Please Login</h2>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
@@ -77,7 +77,7 @@ const Login = () => {
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
 
-                <Button className='d-block w-50 mx-auto my-2' variant="primary" type="submit">
+                <Button className='d-block w-75 mx-auto my-2 log-button border' variant="" type="submit">
                     Submit
                 </Button>
             </Form>

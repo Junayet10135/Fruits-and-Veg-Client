@@ -9,7 +9,7 @@ const Inventory = () => {
     const navigate = useNavigate();
 
     const handleDelete = id => {
-        const proceed = window.confirm('are you sure?');
+        const proceed = window.confirm('are you sure? you want to delete');
         if (proceed) {
             const url = `http://localhost:5000/inventory/${id}`;
             fetch(url, {
@@ -31,8 +31,8 @@ const Inventory = () => {
     }
     return (
         <div style={{minHeight:"100vh"}} className='container'>
-            <h2 className='text-center'>Here products section :{inventorys.length}</h2>
-            <button onClick={handleUpdate} className='button d-block mx-auto'> Add New Product?</button>
+            <h2 className='text-center section-title mt-4 mb-2'>All Inventories Section</h2>
+            <button onClick={handleUpdate} className='w-75 all-inven-btn d-block mx-auto'> Add New Product?</button>
             <div className='row mx-auto text-center'>
                 {
                     inventorys.map(inventory => <AllProduct

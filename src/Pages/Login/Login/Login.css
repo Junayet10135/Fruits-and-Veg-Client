@@ -1,0 +1,8 @@
+.log-button{
+    background-color: rgb(205, 238, 138);
+    border-radius: 10px;
+}
+
+.log-button:hover{
+    background-color: rgb(215, 238, 62);
+}

@@ -22,7 +22,7 @@ const Products = () => {
                     ></Product>)
                 }
             </div>
-            <button onClick={handleAllProduct} className=' w-75  d-block mx-auto all-inven-btn my-2'>Manage All Products</button>
+            <button onClick={handleAllProduct} className=' w-75  d-block mx-auto all-inven-btn mt-2 mb-4'>Manage All Products</button>
         </div>
     );
 };

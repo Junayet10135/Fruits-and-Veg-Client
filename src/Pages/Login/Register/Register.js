@@ -55,11 +55,11 @@ const Register = () => {
 
         await createUserWithEmailAndPassword(email, password);
         await updateProfile({ displayName: name });
-        navigate('/home');
+        navigate('/');
     }
     return (
         <div className='container mx-auto w-50 mt-5 form-container'>
-            <h2 className='text-center'>Please Register</h2>
+            <h2 className='text-center section-title mb-4 p-2'>Please Register</h2>
             <Form onSubmit={handleRegister}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Your Name</Form.Label>
@@ -81,7 +81,7 @@ const Register = () => {
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check onClick={() => setAgree(!agree)} type="checkbox" className={agree ? 'text-success' : 'text-danger'} htmlFor="terms" label="Agree With Terms and Condition?" />
                 </Form.Group>
-                <Button disabled={!agree} className='d-block w-50 mx-auto my-2' variant="primary" type="submit">
+                <Button disabled={!agree} className='d-block w-75 mx-auto my-2' variant="primary" type="submit">
                     Submit
                 </Button>
             </Form>
